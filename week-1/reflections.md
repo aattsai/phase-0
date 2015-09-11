@@ -32,3 +32,10 @@
 
 
 #1.3 Forking and Cloning Reflection
+  To create a new repo, you first log on to your GitHub account. Find the + icon on the homepage's top right corner, click it and select New repository. You then enter the name of your repo and select create. To fork a repo, you find the repo desired, then click on fork on the top right corner. To clone, you copy the URL within the forked repo. Go to command terminal, find the directory you wish to clone the repo in, type in git clone and the URL copied.
+
+  You fork a repo when the content you are looking for has already been created as opposed to having to create a new one entirely.
+
+  I encountered no struggle setting up git and GitHub. By following the instruction allowed me to set up everything smoothly.
+
+  Testing with additional changes
