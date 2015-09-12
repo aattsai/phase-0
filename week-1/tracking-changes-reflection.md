@@ -12,6 +12,6 @@
   -git add newfile.md
   -git commit -m "message"
 ###What is a pull request and how do you create and merge one?
-  Pull request is to submit your changes to the repo on GitHub. To create - git push origin filename. Find the pull request button on GitHub, find the correct repo then click create pull request. Then click merge to merge.
+  Pull request is to submit your changes to the repo on GitHub. To create - git push origin branch_name. Find the pull request button on GitHub, find the correct repo then click create pull request. Then click merge to merge. Go back to the terminal and type git checkout master to navigate back to the master branch. Type git fetch origin master and git merge origin/master to merge.
 ###Why are pull requests preferred when working with teams?
-  Pull requests allow people to work on different part of a project and merge on the work on GitHub. It makes working in a team easier and more efficient.
+  Pull requests allow people to work on different part of a project remotely and merge all the work on GitHub. It makes working in a team easier and more efficient.
