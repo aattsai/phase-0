@@ -1,12 +1,12 @@
-![Alt change color](/imgs/1.change_the_color.png)
-![Alt column](/imgs/2.column.png)
-![Alt row](/imgs/3.row.png)
-![Alt equidistant](/imgs/4.make_equidistant.png)
-![Alt squares](/imgs/5.squares.png)
-![Alt footer](/imgs/6.footer.png)
-![Alt header](/imgs/7.header.png)
-![Alt sidebar](/imgs/8.sidebar.png)
-![Alt creative](/imgs/9.creative.png)
+![Alt change color](/imgs/change_the_color.png)
+![Alt column](/imgs/column.png)
+![Alt row](/imgs/row.png)
+![Alt equidistant](/imgs/make_equidistant.png)
+![Alt squares](/imgs/squares.png)
+![Alt footer](/imgs/footer.png)
+![Alt header](/imgs/header.png)
+![Alt sidebar](/imgs/sidebar.png)
+![Alt creative](/imgs/creative.png)
 
 
 ###How can you use Chrome's DevTools inspector to help you format or position elements?
