@@ -1,12 +1,12 @@
-![Alt text](week3/chrome-devtools/imgs/change_the_color.png)
-![Alt text](week3/chrome-devtools/imgs/column.png)
-![Alt text](week3/chrome-devtools/imgs/row.png)
-![Alt text](week3/chrome-devtools/imgs/make_equidistant.png)
-![Alt text](week3/chrome-devtools/imgs/squares.png)
-![Alt text](week3/chrome-devtools/imgs/footer.png)
-![Alt text](week3/chrome-devtools/imgs/header.png)
-![Alt text](week3/chrome-devtools/imgs/sidebar.png)
-![Alt text](week3/chrome-devtools/imgs/creative.png)
+![Alt text](imgs/change_the_color.png)
+![Alt text](imgs/column.png)
+![Alt text](imgs/row.png)
+![Alt text](imgs/make_equidistant.png)
+![Alt text](imgs/squares.png)
+![Alt text](imgs/footer.png)
+![Alt text](imgs/header.png)
+![Alt text](sidebar.png)
+![Alt text](creative.png)
 
 
 ###How can you use Chrome's DevTools inspector to help you format or position elements?
