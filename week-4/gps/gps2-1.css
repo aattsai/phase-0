@@ -1,0 +1,23 @@
+body {
+    font-family: Tahoma;
+}
+
+header {
+    background-color: gray;
+    padding: .5% 0% .5% 1.5%;
+}
+.column-1 {
+    width:45%;
+    margin: 2.5%;
+    float: left;
+}
+.column-2 {
+    width:45%;
+    margin:2.5%;
+    float: right;
+}
+footer {
+    clear: both;
+    background-color: gray;
+    padding: .5% 0% .5% 1.5%;
+}
