@@ -40,7 +40,6 @@ end
 def update_list (list_name, item, quantity)
   list_name[item] = quantity
   puts "You have updated #{item} to #{quantity}"
-
 end
 
 def print_list (list_name)
