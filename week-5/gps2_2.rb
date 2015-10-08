@@ -55,3 +55,19 @@ add_list(create_list, "Ice Cream", "4")
 remove_list(create_list, "Lemonade")
 update_list(create_list, "Ice Cream", "1")
 print_list(create_list)
+
+
+
+=begin
+What did you learn about pseudocode from working on this challenge?
+  I learned about how to outline pseudocode by first breaking down the problem into small tasks. The to consider program's input and output and steps to solve each tasks.
+What are the tradeoffs of using Arrays and Hashes for this challenge?
+What does a method return?
+What kind of things can you pass into methods as arguments?
+How can you pass information between methods?
+What concepts were solidified in this challenge, and what concepts are still confusing?
+
+
+
+
+=end
