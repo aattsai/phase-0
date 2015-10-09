@@ -22,9 +22,10 @@
 # Output: Print out list
 
 def create_list
-  list_name = {}
-  return list_name
+  Hash.new(0)
 end
+
+list_name = create_list
 
 def add_list (list_name, item, quantity)
   list_name[item] = quantity
@@ -48,13 +49,14 @@ def print_list (list_name)
   end
 end
 
-add_list(create_list, "Lemonade", "6")
-add_list(create_list, "Tomatoes","3")
-add_list(create_list, "Onions", "1")
-add_list(create_list, "Ice Cream", "4")
-remove_list(create_list, "Lemonade")
-update_list(create_list, "Ice Cream", "1")
-print_list(create_list)
+add_list(list_name, "Lemonade", "2")
+add_list(list_name, "Tomatoes","3")
+add_list(list_name, "Onions", "1")
+add_list(list_name, "Ice Cream", "4")
+remove_list(list_name, "Lemonade")
+update_list(list_name, "Ice Cream", "1")
+puts
+print_list(list_name)
 
 
 
@@ -62,12 +64,14 @@ print_list(create_list)
 What did you learn about pseudocode from working on this challenge?
   I learned about how to outline pseudocode by first breaking down the problem into small tasks. The to consider program's input and output and steps to solve each tasks.
 What are the tradeoffs of using Arrays and Hashes for this challenge?
+  By using Hashes, which is what we did, each value is associated by an unique key. Which makes it much easier to call and modify that specific element.
 What does a method return?
+  It returns an output processed by the method
 What kind of things can you pass into methods as arguments?
+  Any object such as string, integer, and array
 How can you pass information between methods?
+  You can call on a method and assign arguments
 What concepts were solidified in this challenge, and what concepts are still confusing?
-
-
-
+  I learned that one can pass array as arguments in a method. I am still not very comfortable with accessing information from one method to another.
 
 =end
