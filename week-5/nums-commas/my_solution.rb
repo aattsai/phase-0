@@ -16,30 +16,30 @@
 
 # 1. Initial Solution
 
-=begin
+
 def separate_comma (num)
     rev_num = num.to_s.reverse
     count = rev_num.length/3.1
     for i in 1..count
       num = rev_num.insert(4*i-1, ",").reverse
     end
-    return num
+    num
 end
 
-=end
 # 2. Refactored Solution
 
 def separate_comma(num)
-  puts num.to_s.reverse.
-#  return num.to_s.reverse.chars.each_slice(3).map {|x| x.join}.join(',').reverse
+  num.to_s.reverse.scan(/\d{1,3}/).join(",").reverse
 end
 
-separate_comma(100)
-separate_comma(1000)
-separate_comma(10000)
-separate_comma(100000)
-separate_comma(1000000)
-separate_comma(10000000)
-separate_comma(100000000)
-
 # 3. Reflection
+#What was your process for breaking the problem down? What different approaches did you consider?
+# => Initially I wanted to add comma to num based on the length of the string num using if else. But I would have to create infinite number of elsif to cover infinite length of num. So I thought it was a bad idea.
+#Was your pseudocode effective in helping you build a successful initial solution?
+# => In this instance it was not effective. I had to try it a few times with code to figure out the solution.
+#What Ruby method(s) did you use when refactoring your solution? What difficulties did you have implementing it/them? Did it/they significantly change the way your code works? If so, how?
+# => I used .scan and regular expression to group the string in 3's and whatever remains. I found it difficult to implement at first because Ruby doc does not specify how to use regular expression. But I was able to find out how it works through nearly one hour of research. It significant'y reduce the length of my code.
+#How did you initially iterate through the data structure?
+# => I used a for loop
+#Do you feel your refactored solution is more readable than your initial solution? Why?
+# => It is much more readable if one understands how regular expression and each method works. I would say now that I get it, it is a lot more readable.
