@@ -2,7 +2,7 @@
 
 # I worked on this challenge [by myself, with:]
 
-# I spent [#] hours on this challenge.
+# I spent [1.5] hours on this challenge.
 
 class NameData
   attr_accessor :name
@@ -19,13 +19,13 @@ class Greetings
   end
 
   def hello
-    puts "Hello, #{@name}! How wonderful to see you today."
+    puts "Hello, #{@name.name}! How wonderful to see you today."
   end
 
 end
 
-greetings = Greetings.new
-greetings.hello.name
+greets = Greetings.new
+greets.hello
 
 # Reflection
 #Release 1
@@ -49,3 +49,15 @@ greetings.hello.name
 # => change_my_age
 #Is this code simpler than the last?
 # => yes
+
+#Release 6
+#What is a reader method?
+# => Reader method allows the value of variable to be access outside of class.
+#What is a writer method?
+# => Writer method allows the value of variable to be modified outside of class
+#What do the attr methods do for you?
+  # => It holds a variable to allow access across classes.
+#Should you always use an accessor to cover your bases? Why or Why not?
+# => Not always, because sometimes you don't want all your variables to be changeable. It could cause problems in debugging or could compromise the security of data.
+#What is confusing to you about these methods?
+# => These methods are not confusing.
