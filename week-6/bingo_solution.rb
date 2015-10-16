@@ -1,6 +1,6 @@
 # A Nested Array to Model a Bingo Board SOLO CHALLENGE
 
-# I spent [#] hours on this challenge.
+# I spent [1] hours on this challenge.
 
 
 # Release 0: Pseudocode
@@ -82,7 +82,62 @@ end
 
 
 # Refactored Solution
+class BingoBoard
 
+  def initialize(board)
+    @bingo_board = board
+  end
+
+  def check
+
+    column = calls.chr
+    num = calls.slice(1..2)
+
+    p column + num
+    case column
+    when 'b'
+      @bingo_board.map! {|i|}
+      for i in 0...5
+        if @bingo_board[i][0].to_s == num
+          @bingo_board[i][0] = "X"
+        end
+      end
+
+    when 'i'
+      for i in 0...5
+        if @bingo_board[i][1].to_s == num
+          @bingo_board[i][1] = "X"
+        end
+      end
+
+    when 'n'
+      for i in 0...5
+        if @bingo_board[i][2].to_s == num
+          @bingo_board[i][2] = "X"
+        end
+      end
+
+    when'g'
+      for i in 0...5
+        if @bingo_board[i][3].to_s == num
+          @bingo_board[i][3] = "X"
+        end
+      end
+
+    when 'o'
+      for i in 0...5
+        if @bingo_board[i][4].to_s == num
+          @bingo_board[i][4] = "X"
+        end
+      end
+    end
+
+    for i in 0...5
+      p @bingo_board[i]
+    end
+
+  end
+end
 
 
 #DRIVER CODE (I.E. METHOD CALLS) GO BELOW THIS LINE
