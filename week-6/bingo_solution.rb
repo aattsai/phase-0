@@ -29,26 +29,69 @@ class BingoBoard
   def initialize(board)
     @bingo_board = board
   end
+
   def check
 
+    column = calls.chr
+    num = calls.slice(1..2)
+
+    p column + num
+    if column == 'b'
+
+      for i in 0...5
+        if @bingo_board[i][0].to_s == num
+          @bingo_board[i][0] = "X"
+        end
+      end
+
+    elsif column == 'i'
+      for i in 0...5
+        if @bingo_board[i][1].to_s == num
+          @bingo_board[i][1] = "X"
+        end
+      end
+
+    elsif column == 'n'
+      for i in 0...5
+        if @bingo_board[i][2].to_s == num
+          @bingo_board[i][2] = "X"
+        end
+      end
+
+    elsif column == 'g'
+      for i in 0...5
+        if @bingo_board[i][3].to_s == num
+          @bingo_board[i][3] = "X"
+        end
+      end
+
+    elsif column == 'o'
+      for i in 0...5
+        if @bingo_board[i][4].to_s == num
+          @bingo_board[i][4] = "X"
+        end
+      end
+    end
+
+    for i in 0...5
+      p @bingo_board[i]
+    end
+
   end
-
-
-
 end
 
 
 # Refactored Solution
 
 
+
+#DRIVER CODE (I.E. METHOD CALLS) GO BELOW THIS LINE
+
 def calls
   letter = ['b','i','n','g','o']
   return letter[rand(4)] + rand(1-100).to_s
 end
 
-p calls
-
-#DRIVER CODE (I.E. METHOD CALLS) GO BELOW THIS LINE
 board = [[47, 44, 71, 8, 88],
         [22, 69, 75, 65, 73],
         [83, 85, 97, 89, 57],
@@ -56,6 +99,6 @@ board = [[47, 44, 71, 8, 88],
         [75, 70, 54, 80, 83]]
 
 new_game = BingoBoard.new(board)
-
+new_game.check
 
 #Reflection
