@@ -106,11 +106,9 @@ class BingoBoard
     p column + num
     case column
     when 'b'
-      for i in 0...5
-        if @bingo_board[i][0].to_s.include?(num)
-          @bingo_board[i][0] = 'X'
-        end
-      end
+      @bingo_board.each {|rows| if rows.to_s.include?(num)
+          @bingo_board.map! {|rows, columns| columns = 'X'} }
+
 
     when 'i'
       for i in 0...5
@@ -141,9 +139,7 @@ class BingoBoard
       end
     end
 
-    for i in 0...5
-      p @bingo_board[i]
-    end
+    @bingo_board.each {|rows| p rows}
 
   end
 end
