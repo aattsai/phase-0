@@ -1,8 +1,8 @@
  // JavaScript Olympics
 
-// I paired [by myself, with:Jack Huang] on this challenge.
+// I paired with:Jack Huang on this challenge.
 
-// This challenge took me [1.5] hours.
+// This challenge took me [2]hours.
 
 
 // Warm Up
@@ -68,5 +68,14 @@ console.log(michaelPhelps.name + " " + michaelPhelps.sport + " " + michaelPhelps
 
 // Reflection
 //What JavaScript knowledge did you solidify in this challenge?
+//I found this challenge to be quite confusing. It took us a
+//long time to sort of figure out what the releases are
+//asking us to do. I guess one thing I got out of this challenge
+// was that I was not completely familiar with several JavaScript
+//concepts, so I went back and did some more readings to further
+//solidify my understanding.
+
 //What are constructor functions?
+// Constructor functions can be used as a template for creating multiple instances of an object.
 //How are constructors different from Ruby classes (in your research)?
+//JavaScript does not restrict access to properties.
