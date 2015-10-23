@@ -2,7 +2,7 @@
 
 // I paired with:Jack Huang on this challenge.
 
-// This challenge took me [1.5] hours.
+// This challenge took me [2]hours.
 
 
 // Warm Up
@@ -76,5 +76,6 @@ console.log(michaelPhelps.name + " " + michaelPhelps.sport + " " + michaelPhelps
 //solidify my understanding.
 
 //What are constructor functions?
-//
+// Constructor functions can be used as a template for creating multiple instances of an object.
 //How are constructors different from Ruby classes (in your research)?
+//JavaScript does not restrict access to properties.
