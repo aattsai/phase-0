@@ -1,4 +1,61 @@
 // Add the finished solution here when you receive it.
+
+
+// var math = function(evenArray, oddArray) {
+//  var evenSum = 0;
+//  var oddSum = 0;
+//  var even_size = evenArray.length;
+//  var odd_size = oddArray.length;
+
+//   for (var count = 0; count <= even_size; count++)
+//     evenSum = evenArray[count] + evenSum;
+//     return evenSum;
+
+//   for (var count = 0; count <= odd_size; count++)
+//     oddSum = oddArray[count] + oddSum;
+//     return oddSum;
+
+//   var evenMean = evenSum / even_size;
+//     return evenMean;
+
+//   var oddMean = oddSum / odd_size;
+//     return oddMean
+
+//   var evenSort = evenArray.sort();
+//   var x = even_size / 2;
+//   var  evenMedian = (evenSort[x] + evenSort[x-1]) / 2;
+//     return evenMedian
+
+//   var oddSort = oddArray.sort();
+//   var y = (odd_size / 2).floor;
+//   var oddMedian = oddSort[y];
+
+//
+
+function sum(array) {
+  var addup = 0;
+  for ( var i = 0; i < array.length; i++) {
+    addup += array[i];
+  };
+  return addup;
+};
+
+function mean(array) {
+  var addup = 0;
+  for ( var i = 0; i < array.length; i++) {
+    addup += array[i];
+  };
+  return addup/array.length;
+};
+
+function median(array) {
+  if (array.length % 2 === 0 ) {
+    return((array[(array.length / 2) - 1] + array[(array.length / 2)])/2);
+  }
+  else {
+    return array[(array.length-1)/2];
+  };
+};
 // __________________________________________
 // Tests:  Do not alter code below this line.
 
@@ -16,7 +73,7 @@ function assert(test, message, test_number) {
   return true;
 }
 
-// tests for sum
+//tests for sum
 assert(
   (sum instanceof Function),
   "sum should be a Function.",
