@@ -13,9 +13,11 @@
 
 // Pseudocode
 // 1. Create an object storing squad member including Team Leader, Assualt Operator, Sniper, and Medic. Set all values to zero initially.
-// 2. Create a function that set number of squad members for each role.
-// 3. Create an object storing information regarding to the barricade situation.
-// 4.
+// 2. Create an object storing information regarding to the barricade situation.
+// 3. Use if/else statement and method random to generate information.
+// 4. Create a funcction to assign the randomly generated information to each properties of object.
+// 5. Create an algorithm that calculates the outcome of the mission.
+// 6. Print out the result of the mission.
 
 // Initial Code
 
@@ -72,21 +74,24 @@ console.log("Your assembled team consists of "+ leader + " Squad Leader,\n" + as
 console.log();
 
 console.log("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
-console.log("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+console.log();
 
-console.log("Ther");
+console.log("The warehouse is barricaded by " + suspect + " suspects who are \nholding " + hostage + " hostages " + wounded + " of whom is wounded.");
+
+console.log();
 
 
 squadAssign(leader, assualt, sniper, medic);
 scenarioAssign(hostage, suspect, wounded);
 console.log(squad);
 console.log(scenario);
+console.log();
 
 var goodguys = squad.leader*3 + squad.assualt*2 + squad.sniper*3;
 var badguys = suspect*2;
 
-console.log("good= " + goodguys);
-console.log("bad= " + badguys);
+//console.log("good= " + goodguys);
+//console.log("bad= " + badguys);
 
 if (squad.leader === 0 && scenario.suspect > 1) {
   missionFailed();
@@ -126,11 +131,10 @@ console.log();
 
 
 // Reflection
-//
-//
-//
-//
-//
-//
-//
-//
+// What was the most difficult part of this challenge?
+// It was not too difficult to create this MVP version of the game. But I expect a lot of effort later on when I make it into a browser game.
+// What did you learn about creating objects and functions that interact with one another?
+// Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
+//Not yet, I only had time to create the MVP version. I am sure I will be able to implement more built-in methods later on when I improve it.
+// How can you access and manipulate properties of objects?
+//I assigned the updated value to it by calling the name of object dot key of property.
