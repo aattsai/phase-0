@@ -2,7 +2,7 @@
 # Create a Car Class from User Stories
 
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [with: Daniel Woznicki].
 
 
 # 2. Pseudocode
@@ -92,11 +92,6 @@ class Pizza
   end
 
 end
-
-
-
-
-
 
 
 # 4. Refactored Solution
