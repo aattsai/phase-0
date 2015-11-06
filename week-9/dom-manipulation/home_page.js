@@ -28,14 +28,9 @@ for( i = 0; i < x.length; i++ ) {
 }
 
 
-
-//x = document.getElementsByClassName("example");
 // Release 5:
 //Take the HTML in the template.hidden and append it to the bottom of the page.
 
 var template = document.getElementById('hidden');
 document.body.appendChild(template.content.cloneNode(true));
-
-//var tmpl = document.getElementById('comment-template');
-//document.body.appendChild(tmpl.content.cloneNode(true));
 
