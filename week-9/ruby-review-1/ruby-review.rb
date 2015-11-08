@@ -88,6 +88,29 @@ def dr_evils_cipher(coded_message)
   decoded_sentence = decoder.join("")
 end
 
+#---------------------------------------------------------------------------------------
+
+ def dr_evils_cipher(coded_message)
+  input = coded_message.downcase.split("")
+  decoded_sentence = []
+  encryption_message= ('a'..'z').to_a.rotate(4)
+  value_letter = ('a'..'z').to_a
+  cipher = Hash.new
+  cipher = encryption_message.zip(value_letter).to_h
+  special_char_array = ["@", "#", "$", "%", "&", "*", "^"]
+
+  input.each do |current_letter|
+    if cipher.include?(current_letter)
+      decoded_sentence << cipher[current_letter]
+    elsif
+      special_char_array.include?(current_letter)
+      decoded_sentence << " "
+    else
+      decoded_sentence << current_letter
+    end
+    end
+  return decoded_sentence.join("")
+ end
 
 # Driver Test Code:
 p dr_evils_cipher("m^aerx%e&gsoi!") == "i want a coke!" #This is driver test code and should print true
